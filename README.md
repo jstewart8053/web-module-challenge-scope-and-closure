@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closures are functions that have other functions inside of them. Allowing access to the inner function to the outer function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,9 +64,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The closure is created when personalDice returns a callback function. You can tell because the closure is created when one function is inside another.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+"Dan" will always be the same, the dice roll would change because each time dansRoll() is called, a new roll is calculated
 c. What is the lexical scope of `newRoll`? 
-
+The lexical scope is the scope of the function personalDice because the function function that defines newRoll is a function inside of the personalDice funciton.
 ### Task 2c - Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/WjSzNh9gDrD8Xn8hw/enY3yPRP3nEm7E).
